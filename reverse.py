@@ -1,5 +1,5 @@
 print("Tsis program reverses yur name.")
 name = str(input("Write your name: "))
-reversed_name = ''.join(reversed(s))
+reversed_name = ''.join(reversed(name))
 print(reversed_name)
 pause = str("Press <ENTER> to close this windows.")
