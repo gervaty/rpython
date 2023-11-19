@@ -1,7 +1,8 @@
 import random
 print("pwdgen 1.0 - universal password generator.")
 
-symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()"
+#symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()"
+symbols = "01"
 while True:
     password = ""
     numStr = input("Type a number from 1 to 1024 or 0 to exit: ")
@@ -17,4 +18,4 @@ while True:
 
     print(password)
 
-paus = str(input("Press <ENTER> to close this windows."))
+input("Press <ENTER> to close this windows.")
