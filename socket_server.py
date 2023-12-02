@@ -9,6 +9,10 @@ while True:
 	data = conn.recv(1024) # Получаем данные из сокета.
 	if not data:
 		break
-	conn.sendall(data) # Отправляем данные в сокет.
+	conn.send('Server Online\n')
+	conn.send('HTTP/1.0 200 OK\n')
+	conn.send('Content-Type: text/html\n')
+	conn.send("<html>fefeka bebeka</html>".encode()) # Отправляем данные в сокет.
 	print(data.decode('utf-8'))
+
 conn.close()
